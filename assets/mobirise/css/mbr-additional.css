@@ -2359,6 +2359,9 @@ section.lazy-placeholder:after {
 .cid-rYcgO4Oras .input-group-btn .btn {
   border-radius: 3px;
 }
+.cid-rYcgO4Oras .copyright > p {
+  color: #cccccc;
+}
 .cid-rYbrk8JuMX .navbar {
   padding: .5rem 0;
   background: #3b68d9;
@@ -3200,6 +3203,9 @@ section.lazy-placeholder:after {
 .cid-rYcgE3vLLL .form-control,
 .cid-rYcgE3vLLL .input-group-btn .btn {
   border-radius: 3px;
+}
+.cid-rYcgE3vLLL .copyright > p {
+  color: #cccccc;
 }
 .cid-rYbrk8JuMX .navbar {
   padding: .5rem 0;
@@ -4188,6 +4194,9 @@ section.lazy-placeholder:after {
 .cid-rYcgE3vLLL .form-control,
 .cid-rYcgE3vLLL .input-group-btn .btn {
   border-radius: 3px;
+}
+.cid-rYcgE3vLLL .copyright > p {
+  color: #cccccc;
 }
 .cid-rYbrk8JuMX .navbar {
   padding: .5rem 0;
@@ -5235,6 +5244,9 @@ section.lazy-placeholder:after {
 .cid-rYcgE3vLLL .input-group-btn .btn {
   border-radius: 3px;
 }
+.cid-rYcgE3vLLL .copyright > p {
+  color: #cccccc;
+}
 .cid-rYbrk8JuMX .navbar {
   padding: .5rem 0;
   background: #3b68d9;
@@ -6241,6 +6253,9 @@ section.lazy-placeholder:after {
 .cid-rYcgE3vLLL .input-group-btn .btn {
   border-radius: 3px;
 }
+.cid-rYcgE3vLLL .copyright > p {
+  color: #cccccc;
+}
 .cid-rYbrk8JuMX .navbar {
   padding: .5rem 0;
   background: #3b68d9;
@@ -7101,4 +7116,7 @@ section.lazy-placeholder:after {
 .cid-rYcgE3vLLL .form-control,
 .cid-rYcgE3vLLL .input-group-btn .btn {
   border-radius: 3px;
+}
+.cid-rYcgE3vLLL .copyright > p {
+  color: #cccccc;
 }
