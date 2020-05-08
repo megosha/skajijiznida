@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo2-134x39.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/mbr-favicon.png" type="image/x-icon">
   <meta name="description" content="Web Builder Description">
   
   <title>О нас</title>
@@ -14,9 +14,12 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/recaptcha.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
@@ -33,26 +36,29 @@
 
     <nav class="navbar navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <div class="menu-content-top">
-            <div class="menu-logo">
+<!--             <div class="menu-logo">
                 <div class="navbar-brand">
-                    <span class="navbar-logo">
+                    <span mbr-if="showLogo" class="navbar-logo">
                         <a href="#">
-                            <img src="assets/images/logo2-134x39.png" alt="" title="" style="height: 3.4rem;">
+                            <img src="assets/images/logo2-134x39.png" alt="" mbr-style="{'height': logoSize + 'rem'}" title>
                         </a>
                     </span>
-                    
+                    <span mbr-if="showBrand" mbr-theme-style="display-5" mbr-buttons class="navbar-caption-wrap" data-toolbar="-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove">
+                        <a href="#" class="brand-link mbr-black" data-app-selector=".brand-link" data-app-placeholder="Type Text">
+                            MobiRise</a>
+                    </span>
                 </div>
-            </div>
+            </div> -->
             <div class="menu-content-right">
                 <div class="info-widget">
-                    <span class="widget-icon mbr-iconfont mbri-mobile2" style="color: rgb(59, 90, 187); fill: rgb(59, 90, 187);"></span>
+                    <span class="widget-icon mbr-iconfont mbri-mobile2" style="color: rgb(244, 248, 250); fill: rgb(244, 248, 250);"></span>
                     <div class="widget-content display-4">
                         <p class="widget-title mbr-fonts-style display-4">+ (123) 1800-567-8990</p>
                         <p class="widget-text mbr-fonts-style display-4">+ (123) 1800-567-8990</p>
                     </div>
                 </div>
                 <div class="info-widget">
-                    <span class="widget-icon mbr-iconfont mbri-clock" style="color: rgb(59, 90, 187); fill: rgb(59, 90, 187);"></span>
+                    <span class="widget-icon mbr-iconfont mbri-clock" style="color: rgb(244, 248, 250); fill: rgb(244, 248, 250);"></span>
                     <div class="widget-content display-4">
                         <p class="widget-title mbr-fonts-style display-4">Пн - Пт: 9:00 - 19:00</p>
                         <p class="widget-text mbr-fonts-style display-4">Сб - Вс: Закрыто</p>
@@ -63,7 +69,7 @@
 
 
 
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-lg btn-primary-outline display-4" href="#">
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-lg btn-white-outline display-4" href="about.html#extFooter1-12">
 
                         Обратная связь</a></div>
 
@@ -75,21 +81,29 @@
             </div>
         </div>
         <div class="menu-bottom">
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="#">
+                            <img src="assets/images/logo2-134x39.png" alt="" title="" style="height: 3rem;">
+                        </a></span>
+        </div></div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
                 <ul class="navbar-nav nav-dropdown js-float-line" data-app-modern-menu="true"><li class="nav-item">
-                        <a class="nav-link link mbr-black text-white display-4" href="index.html">
+                        <a class="nav-link link mbr-black text-warning display-4" href="index.html">
                             Главная</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link link mbr-black text-white display-4" href="about.html" aria-expanded="false">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link link mbr-black text-warning display-4" href="about.html" aria-expanded="false">О нас</a></li>
 
-                    <li class="nav-item"><a class="nav-link link mbr-black text-white display-4" href="projects.html">Проекты</a></li><li class="nav-item">
-                        <a class="nav-link link mbr-black text-white display-4" href="#">Партнёры</a>
+                    <li class="nav-item"><a class="nav-link link mbr-black text-warning display-4" href="projects.html">Проекты</a></li><li class="nav-item">
+                        <a class="nav-link link mbr-black text-warning display-4" href="#">Партнёры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link mbr-black text-white display-4" href="news.html">
+                        <a class="nav-link link mbr-black text-warning display-4" href="news.html">
                             Новости</a>
-                    </li><li class="nav-item"><a class="nav-link link mbr-black text-white display-4" href="index.html#extMap1-c">
-                            Контакты</a></li><li class="nav-item"><a class="nav-link link mbr-black text-white display-4" href="#">
+                    </li><li class="nav-item"><a class="nav-link link mbr-black text-warning display-4" href="index.html#extMap1-c">
+                            Контакты</a></li><li class="nav-item"><a class="nav-link link mbr-black text-warning display-4" href="index.html#extFooter1-13">
                             Обратная связь</a></li></ul>
 
             </div>
@@ -105,31 +119,29 @@
     </nav>
 </section>
 
-<section class="mbr-section content4 cid-rYcm4UTvm9" id="content4-1h">
-
+<section class="extHeader cid-rYnLZb6Ym5 mbr-parallax-background" id="extHeader27-3m">
     
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    <br><br>О нас</h2>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section extContent cid-rYcjYXgMxb" id="extContent15-1d">
-
     
+    <div class="back"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 block">
+                <div class="content-wrapper align-left">
+                    
+                    <div class="content">
+                        
+                        <h1 class="mbr-section-title mbr-semibold pb-4 mbr-fonts-style display-1">О НАС</h1>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-sm-12 text-section">
-                <p class="mbr-fonts-style mbr-text align-center display-7">В это непростое для нашей страны время, когда под тяжестью проблем многие люди,семьи сломались, потеряв веру в себя, в своё будущее, в государство, в Бога. Когда обострились социальные болезни общества - наркомания и алкоголизм, что привело к повышению числа детей из неблагополучных семей,детей оставшихся без родителей  увеличению числа бесцельной и неустроенной молодёжи. Когда, отчаявшись, они уже не ждут ни от кого поддержки. Когда одной из самых опасных и страшных «болезней» общества стало равнодушие к судьбам других людей:детей,инвалидов, стариков.<br>            <br>Мы Благотворительная общественная  организация МОО "Скажи жизни "Да!" Поставили своей целью  объединять разные структуры общества и государства, чтоб решать социальные проблемы общества, некоммерческая общественная организация преследует не коммерческие, а социальные цели и выгоду для общества!<br>     Неоднократные победители конкурсов, грандов как городского, так и краевого уровня, имеет награду от Администрации города как лучшая организация года в номинации «Сохраним жизнь»<br>Свою миссию видит в  развитие и пропаганде культуры волонтерства в обществе и нашем городе.<br>       <br>Мы не можем решить всех проблем,спасти весь мир и помочь всем нуждающимся. Но в наших силах сделать этот мир чуть лучше и помочь кому то рядом в нашем городе и крае!</p>
-                
+                        <p class="mbr-text mbr-regular mbr-fonts-style display-7">В это непростое для нашей страны время, когда под тяжестью проблем многие люди,семьи сломались, потеряв веру в себя, в своё будущее, в государство, в Бога. Когда обострились социальные болезни общества - наркомания и алкоголизм, что привело к повышению числа детей из неблагополучных семей,детей оставшихся без родителей увеличению числа бесцельной и неустроенной молодёжи. Когда, отчаявшись, они уже не ждут ни от кого поддержки. Когда одной из самых опасных и страшных «болезней» общества стало равнодушие к судьбам других людей:детей,инвалидов, стариков.
+<br>
+<br>Мы Благотворительная общественная организация МОО "Скажи жизни "Да!" Поставили своей целью объединять разные структуры общества и государства, чтоб решать социальные проблемы общества, некоммерческая общественная организация преследует не коммерческие, а социальные цели и выгоду для общества!
+<br>Неоднократные победители конкурсов, грандов как городского, так и краевого уровня, имеет награду от Администрации города как лучшая организация года в номинации «Сохраним жизнь»
+<br>Свою миссию видит в развитие и пропаганде культуры волонтерства в обществе и нашем городе.
+<br>
+<br>Мы не можем решить всех проблем,спасти весь мир и помочь всем нуждающимся. Но в наших силах сделать этот мир чуть лучше и помочь кому то рядом в нашем городе и крае!</p>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -146,54 +158,57 @@
             <div class="col-md-3 col-sm-12">
                 <div class="mb-3 img-logo">
                     <a href="#">
-                        <img src="assets/images/logo1.png" alt="">
+                        <img src="assets/images/logo2-1-192x56.png" alt="" title="">
                     </a>
                 </div>
-                <p class="mb-3 mbr-fonts-style foot-title display-7">
-                    MOBIRISE
-                </p>
+                <p class="mb-3 mbr-fonts-style foot-title display-7">Разделы</p>
                 <p class="mbr-text mbr-fonts-style display-7">
-                    <a href="#" class="text-white">О нас</a>
-                    <br><a href="#" class="text-white">Сервис</a>
-                    <br><a href="#" class="text-white">Выбор работы</a>
-                    <br><a href="#" class="text-white">Связаться</a>
-                </p>
+                    <a href="about.html" class="text-white">О нас</a>
+                    <br><a href="projects.html" class="text-white">Проекты
+</a>                    <br><a href="index.html#clients-9" class="text-white">Партнёры&nbsp;</a><br><a href="news.html" class="text-white">Новости</a><br></p>
             </div>
             <div class="col-md-4 col-sm-12">
                 <p class="mb-4 foot-title mbr-fonts-style display-5">
-                    Recent News
-                </p>
+                    Реквизиты</p>
                 <p class="mbr-text mbr-fonts-style display-7">
-                    Нижний колонтитул со сплошным фоновым цветом и контактной формой, легко добавить форму подписки и контакты без использования вашего хостинга.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate est eveniet, in iusto labore libero minima minus neque nisi nulla officia perspiciatis
                     <br>
-                    <br>Mobirise помогает сократить время разработки сайта, благодаря гибкому редактору с помощью простого перетаскивания.
+                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate est eveniet, in iusto labore libero minima minus neque nisi nulla officia perspiciatis.
                 </p>
             </div>
             <div class="col-md-4 offset-md-1 col-sm-12">
-                <p class="mb-4 foot-title mbr-fonts-style display-5">
-                    Contact Us
-                </p>
-                <div class="form-block">
+                <p class="mb-1 foot-title mbr-fonts-style display-5">
+                    Обратная связь</p>
+                <span class="small text-muted">Введённые данные используются только для обратной связи.
+Сервис не хранит и не передаёт третьим лицам Ваши ФИО и контактные данные.</span>
+                <div class="form-block mt-4">
                     <div data-form-type="formoid">
-                        <!---Formbuilder Form--->
-                        <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="aTYcx1+hwjS6hAIsOGLhlcwwXx/ZCpLfeK137Fhf9WY/pzBmKoJiOIB/bAQ2u+mBGVn1p3Auet97qM8dUjFUcqoqaeWhhZK93FaWN9myv/YuGvsmZDVrmtEuLIy6xUK0.YsLyPjMbw+QUXa1T4KeDOoD5FV+13/QbSCxyAnWIZbmaekT6tAg2o8/auqakCengovum/3xQzMO3EBPv0FYGwLU/j+h9NRSEul1Ni89JDR1QUt7SjajBJhn9Ew8VgSNe">
-                            <div class="form-row">
-                                <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо за заполнение анкеты!</div>
-                                <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"></div>
-                            </div>
-                            <div class="dragArea form-row">
-                                <div class="col-md-12  form-group" data-for="email">
-                                    <input type="text" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control input display-7" id="email-extFooter1-12">
-                                </div>
-                                <div class="col-md-12  form-group" data-for="message">
-                                    <textarea type="textarea" name="message" placeholder="Message" data-form-field="Message" class="form-control input display-7" id="message-extFooter1-12"></textarea>
-                                </div>
-                                <div class="col-md-12  align-center input-group-btn mt-2">
-                                    <button type="submit" class="btn btn-primary btn-bgr btn-form display-4">ОТПРАВИТЬ СООБЩЕНИЕ</button>
-                                </div>
-                            </div>
-                        </form><!---Formbuilder Form--->
-                    </div>
+<!--Formbuilder Form-->
+<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="qYJLqKe52vcOS/ucF8x/AlBDuZhZfpW/3tlhe18kM+l+PZm6uvNQ0LLTG+W4qLTkOYAsVG9r2H70t/HYkmi9T9CuYXwU7kzZzJpvim8sryX0DKSiNjiQB8t6DzDykqGm.hiRRAtxo7NBcyC13yHVu8u+wjoFwNPvSNLS6dcoEXvD9XCI7JroOtoIZMDa/T8NHLXUTqDDD2anEZIu7535Jf6xKefelcbrOtJlbGzWe8ByKjI1BBIsUcEQsMJAxWozp">
+<div class="form-row">
+<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо за заполнение анкеты!</div>
+<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+</div>
+</div>
+<div class="dragArea form-row">
+<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="fio">
+<input type="text" name="fio" placeholder="Имя" data-form-field="fio" required="required" class="form-control display-7" value="" id="fio-extFooter1-12">
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="phone">
+<input type="tel" name="phone" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-form-field="phone" required="required" class="form-control display-7" value="" id="phone-extFooter1-12">
+</div>
+<div data-for="email" class="col-md-12 form-group">
+<input type="text" name="email" placeholder="Email" data-form-field="Email" class="form-control input display-7" value="" id="email-extFooter1-12">
+</div>
+<div data-for="message" class="col-md-12 form-group">
+<textarea name="message" placeholder="Ваш вопрос или сообщение" data-form-field="Message" required="required" class="form-control input display-7" id="message-extFooter1-12"></textarea>
+</div>
+<div class="col-md-12 align-center input-group-btn mt-2">
+<button type="submit" class="btn btn-primary btn-bgr btn-form display-4">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+</div>
+</div>
+</form><!--Formbuilder Form-->
+</div>
                 </div>
             </div>
         </div>
@@ -206,7 +221,7 @@
             <div class="media-container-row mbr-white">
                 <div class="col-sm-12 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2018 Mobirise - все права защищены
+                        © Copyright 2020 Esina M.V. me@electis.ru - все права защищены
                     </p>
                 </div>
             </div>
@@ -218,12 +233,16 @@
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
   <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/formstyler/jquery.formstyler.js"></script>
+  <script src="assets/formstyler/jquery.formstyler.min.js"></script>
+  <script src="assets/datepicker/jquery.datetimepicker.full.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid.min.js"></script>
   
