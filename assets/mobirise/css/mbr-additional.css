@@ -6948,6 +6948,11 @@ section.lazy-placeholder:after {
 .cid-rYmWqXfEvy .card-img {
   position: relative;
 }
+.cid-rYmWqXfEvy .card-img img {
+  height: 180px;
+  width: unset;
+  margin-top: 1rem;
+}
 .cid-rYmWqXfEvy .card:hover .image-btn {
   opacity: 1;
   bottom: 10px;
