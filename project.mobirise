@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Скажи жизни да",
-    "currentPage": "pamyatki.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -54,7 +54,7 @@
     "imageResize": true,
     "lazyLoad": true,
     "lazyType": "blur",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/logoomin-105x105.png",
     "cssOptimize": false,
     "robotsSwitcher": true,
     "sitemapSwitcher": true,
@@ -1017,7 +1017,7 @@
               "color": "#333333"
             },
             ".mbr-text": {
-              "color": "#767676"
+              "color": "#232323"
             }
           },
           "_name": "extContent7",
